@@ -1,0 +1,7 @@
+- name: Engineering macOS - Bluetooth Sharing disabled
+  description: Ensure Bluetooth file sharing is disabled on Engineering Macs.
+  platform: darwin
+  query: SELECT 1 FROM sharing_preferences WHERE bluetooth_sharing = 0;
+  labels_include_any:
+    - Engineering department
+  resolution: "Open System Settings > General > Sharing and turn off Bluetooth Sharing."
