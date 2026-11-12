@@ -1,0 +1,8 @@
+- name: macOS - Cloudflare DNS 1.1.1.1 configured
+  description: Checks whether Cloudflare 1.1.1.1 is listed as an active DNS resolver; script repairs macOS network service DNS settings when absent.
+  platform: darwin
+  query: "SELECT 1 WHERE EXISTS (SELECT 1 FROM dns_resolvers WHERE type = 'nameserver' AND address = '1.1.1.1');"
+  resolution: "Configure Cloudflare DNS (1.1.1.1) on macOS network services; review any corporate VPN or split-DNS requirements first."
+  run_script:
+    path: ../platforms/macos/scripts/enforce-cloudflare-dns.sh
+  webhooks_and_tickets_enabled: true
