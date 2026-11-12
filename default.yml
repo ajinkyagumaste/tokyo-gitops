@@ -141,3 +141,7 @@ controls:
 ###########################################################
 labels:
   - paths: ./labels/*.yml
+
+# Global compliance policies (scoped individually by platform and label).
+policies:
+  - paths: ./platforms/all/policies/*.yml
