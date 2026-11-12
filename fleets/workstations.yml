@@ -67,7 +67,10 @@ controls:
   ###########################################################
   apple_settings:
     configuration_profiles:
-      - paths: ../platforms/macos/declaration-profiles/*.json
+      # Defer major macOS upgrades for 90 days on non-beta Macs only.
+      - path: ../platforms/macos/declaration-profiles/defer-major-macos-upgrades-non-beta.json
+        labels_exclude_any:
+          - "macOS 27 beta testers windows"
       - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
   windows_settings:
     configuration_profiles:
