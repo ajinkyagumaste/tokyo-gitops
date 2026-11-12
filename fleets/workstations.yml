@@ -101,6 +101,8 @@ controls:
   macos_updates:
     deadline: "2026-12-31"
     minimum_version: "26.5"
+    # Do not automatically upgrade newly enrolled Macs to the latest major release.
+    update_new_hosts: false
   # windows_updates:
   #   deadline_days: 7
   #   grace_period_days: 2
