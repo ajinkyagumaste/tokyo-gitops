@@ -9,3 +9,8 @@
   description: Hosts whose uptime is 30 days or more since their last reboot.
   query: SELECT 1 FROM uptime WHERE total_seconds >= 2592000;
   label_membership_type: dynamic
+
+- name: macOS 27 beta testers windows
+  description: Manually selected beta testing devices; no hosts assigned yet.
+  label_membership_type: manual
+  hosts: []
