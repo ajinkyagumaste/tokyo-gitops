@@ -23,6 +23,11 @@ org_settings:
     ###########################################################
     org_name: Tokyo FleetOps
 
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/043274c9-76eb-4664-bea1-6c6cf1eea264
+
   server_settings:
     ###########################################################
     # The server URL where Fleet is running.
