@@ -1,0 +1,6 @@
+- name: Engineering department
+  description: Devices assigned to users in the Engineering department according to the connected IdP.
+  label_membership_type: host_vitals
+  criteria:
+    vital: end_user_idp_department
+    value: Engineering
