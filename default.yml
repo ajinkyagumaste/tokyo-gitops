@@ -21,7 +21,7 @@ org_settings:
     # Read more:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
-    org_name: My organization
+    org_name: Tokyo FleetOps
 
   server_settings:
     ###########################################################
