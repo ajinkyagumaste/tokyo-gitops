@@ -24,6 +24,12 @@ org_settings:
     org_name: Tokyo FleetOps
 
   webhook_settings:
+    # Check newly failing-policy webhooks every five minutes.
+    interval: 5m
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/043274c9-76eb-4664-bea1-6c6cf1eea264
+      host_batch_size: 0
     activities_webhook:
       enable_activities_webhook: true
       destination_url: https://webhook.site/043274c9-76eb-4664-bea1-6c6cf1eea264
