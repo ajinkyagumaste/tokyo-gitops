@@ -1,0 +1,9 @@
+{
+  "Type": "com.apple.configuration.softwareupdate.settings",
+  "Identifier": "com.tokyo-fleetops.macos.softwareupdate.nonbeta-deferral",
+  "Payload": {
+    "Deferrals": {
+      "MajorPeriodInDays": 90
+    }
+  }
+}
